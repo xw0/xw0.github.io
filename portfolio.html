@@ -1,458 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <style>
-            body {
-                /*background-color: black;
-                color: white;*/
-            }
-            ul {
-                list-style-type: none;
-            }
-            .project-thumbnail {
-                width: 50%;
-                margin: auto;
-                display: inline-block;
-            }
-            .title {
-                /*text-align: center;*/
-            }
-            .thumbnail {
-            }
-            .card-thumb {
-                display: block;
-                margin-bottom: 14px;
-                color: inherit;
-                text-decoration: none;
-            }
-            .card-thumb img {
-                width: 100%;
-                aspect-ratio: 16 / 10;
-                object-fit: cover;
-                border: 1px solid #ddd;
-                border-radius: 4px;
-                background: #f5f5f5;
-            }
-            .card-thumb .caption {
-                display: block;
-                margin-top: 4px;
-                font-size: 13px;
-                color: #555;
-                text-align: center;
-            }
-            .card-thumb:hover img { border-color: #337ab7; }
-            .card-thumb:hover .caption { color: #337ab7; text-decoration: none; }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="./index.html">xwei.me</a>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">portfolio</a></li>
-                    <li><a href="mailto:weixiang77@gmail.com">contact</a></li>
-                    <li><a href="https://x.com/xgwei" class="newtab">x.com</a></li>
-                    <li><a href="https://www.linkedin.com/in/xiang-wei-50172aa/" class="newtab">linkedin</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>about.me</h3>
-                    <p>I am a Senior Staff Software Engineer at Meta, working on the developer interface of Meta's XR platform: the native runtime-to-engine plugins, the OpenXR integration, the Meta XR Simulator, and AI-agent tooling shipped in the Meta XR SDK. I created the <b>Meta XR Simulator</b>, a desktop OpenXR runtime that simulates physical headsets, led the migration of the Meta XR SDKs to OpenXR, and built <b>Meta XR Operator</b>, the first AI-agent interface for operating XR runtimes and apps. I lead the Agentic AI Task Subgroup in the Khronos OpenXR Working Group. Before Meta, I spent nearly two decades in the game industry and contributed to over 10 AAA titles, going back to the original PlayStation, in roles from Rendering Engineer and Lead Engineer to Technical Architect and Tech Lead Manager.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h5>featured</h5>
-                    <ul>
-                        <li><b>Meta XR Operator:</b> an AI agent plays a real, unmodified VR action game in real time. Video, method, and the agent-written skill and player script
-                            <a href="https://x.com/xgwei/status/2090453805926408426" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><b>Introducing Meta XR Operator:</b> Close the Build-Test-Verify Loop for VR (Meta developer blog)
-                            <a href="https://developers.meta.com/horizon/blog/meta-xr-operator-close-the-build-test-verify-loop-for-vr/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><b>Real-time digital twin of the SF Bay Area:</b> 6,400 km&sup2; built from open data in C++ and Vulkan, replaying 24 hours of 8 real-world feeds; ~235,000 lines written and validated by AI agents (personal project)
-                            <a href="https://x.com/xgwei/status/2087715999500116330" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><b>OpenXR: From XR Portability to Spatial Computing Platform</b>, Khronos session at SIGGRAPH 2026 (co-presenter)
-                            <a href="https://www.youtube.com/watch?v=V68nO3Vxok8&t=2100s" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>shipped products</h5>
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://developers.meta.com/horizon/blog/meta-xr-operator-close-the-build-test-verify-loop-for-vr/" class="card-thumb newtab">
-                                <img src="pic/meta-xr-operator.jpg" alt="Meta XR Operator">
-                                <span class="caption">Meta XR Operator</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://developers.meta.com/horizon/blog/meta-xr-simulator-pc-mac-unity-unreal-developer-mixed-reality/" class="card-thumb newtab">
-                                <img src="pic/meta-xr-simulator.jpg" alt="Meta XR Simulator">
-                                <span class="caption">Meta XR Simulator</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://x.com/xgwei/status/2087715999500116330" class="card-thumb newtab">
-                                <img src="pic/bay-area-digital-twin.jpg" alt="SF Bay Area digital twin">
-                                <span class="caption">SF Bay Area Digital Twin</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://en.wikipedia.org/wiki/Meta_Quest_3" class="card-thumb newtab">
-                                <img src="pic/meta-quest-3.jpg" alt="Meta Quest 3">
-                                <span class="caption">Meta Quest 3</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://en.wikipedia.org/wiki/Far_Cry_4" class="card-thumb newtab">
-                                <img src="pic/far-cry-4.jpg" alt="Far Cry 4">
-                                <span class="caption">Far Cry 4</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4">
-                            <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_IV:_Black_Flag" class="card-thumb newtab">
-                                <img src="pic/ac4-black-flag.jpg" alt="Assassin's Creed IV: Black Flag">
-                                <span class="caption">Assassin's Creed IV: Black Flag</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h5>skills</h5>
-                    <span class="label label-info">C/C++</span>
-                    <span class="label label-info">Python</span>
-                    <span class="label label-info">C#</span>
-                    <span class="label label-info">GLSL / HLSL</span>
-                    <span class="label label-info">Vulkan</span>
-                    <span class="label label-info">Metal</span>
-                    <span class="label label-info">Direct3D</span>
-                    <span class="label label-info">OpenGL / ES</span>
-                    <span class="label label-info">OpenXR</span>
-                    <span class="label label-info">Real-time Rendering</span>
-                    <span class="label label-info">GPU Optimization</span>
-                    <span class="label label-info">Compositors</span>
-                    <span class="label label-info">Game Engine Architecture</span>
-                    <span class="label label-info">Simulation</span>
-                    <span class="label label-info">Digital Twins</span>
-                    <span class="label label-info">Unity</span>
-                    <span class="label label-info">Unreal Engine</span>
-                    <span class="label label-info">Godot</span>
-                    <span class="label label-info">AI Agents</span>
-                    <span class="label label-info">MCP</span>
-                    <span class="label label-info">LLM Tool Calling</span>
-                    <span class="label label-info">Machine Learning</span>
-                    <span class="label label-info">Deep Learning</span>
-                    <span class="label label-info">Virtual Reality</span>
-                    <span class="label label-info">Mixed Reality</span>
-                    <span class="label label-info">Windows</span>
-                    <span class="label label-info">macOS</span>
-                    <span class="label label-info">Android</span>
-                    <span class="label label-info">PlayStation</span>
-                    <span class="label label-info">Xbox</span>
-                    <span class="label label-info">iOS</span>
-                    <span class="label label-info">Build Systems / CI</span>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>projects</h3>
-                    <h5>headsets</h5>
-                    <ul>
-                        <li>Meta Quest 3
-                            <a href="https://en.wikipedia.org/wiki/Meta_Quest_3" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>                        
-                        </li>
-                        <li>Meta Quest Pro
-                            <a href="https://en.wikipedia.org/wiki/Meta_Quest_Pro" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>                        
-                        </li>
-                        <li>Meta (Oculus) Quest 2
-                            <a href="https://en.wikipedia.org/wiki/Quest_2" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>                        
-                        </li>
-                        <li>Oculus Quest
-                            <a href="https://en.wikipedia.org/wiki/Oculus_Quest" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>                        
-                        </li>
-                        <li>Oculus Rift S
-                            <a href="https://en.wikipedia.org/wiki/Oculus_Rift_S" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>                        
-                        </li>
-                    </ul>
-                    <h5>software</h5>
-                    <ul>
-                        <li>Oculus Integration SDK for Unity
-                            <a href="https://developer.oculus.com/downloads/package/unity-integration/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Oculus Source Distribution for Unreal Engine
-                            <a href="https://developer.oculus.com/downloads/package/unreal-engine-5-integration-github/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Mixed Reality Capture Tool for Meta Quest 2
-                            <a href="https://www.meta.com/help/quest/articles/in-vr-experiences/social-features-and-sharing/quest-2-mixed-reality-capture/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Meta XR Simulator
-                            <a href="https://developer.oculus.com/downloads/package/meta-xr-simulator/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Meta XR Operator
-                            <a href="https://developers.meta.com/horizon/blog/meta-xr-operator-close-the-build-test-verify-loop-for-vr/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>AI agents</h5>
-                    <ul>
-                        <li>Meta XR Operator: cross-platform C++ OpenXR API layer exposing spatial state as MCP tools, MCP server and proxy, engine integration, and an agentic build-test-verify loop
-                            <a href="https://x.com/xgwei/status/2090453805926408426" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>NeonReach VR gameplay-testing skill and player script, created by the agent through Meta XR Operator
-                            <a href="https://github.com/xwovr/NeonReachVR/tree/master/.claude/skills/neonreach-gameplay-testing" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>SF Bay Area digital twin: AI-agent orchestration that planned, wrote, reviewed, and validated ~235,000 lines of C++, GLSL, Python, and PowerShell, with golden-image SSIM checks and an MCP server driving the live app
-                            <a href="https://x.com/xgwei/status/2087715999500116330" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>console games</h5>
-                    <ul>
-                        <li>Assassin's Creed Syndicate
-                            <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_Syndicate" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Assassin's Creed IV: Black Flag
-                            <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_IV:_Black_Flag" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Far Cry 4
-                            <a href="https://en.wikipedia.org/wiki/Far_Cry_4" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Far Cry 3
-                            <a href="https://en.wikipedia.org/wiki/Far_Cry_3" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Watch Dogs
-                            <a href="https://en.wikipedia.org/wiki/Watch_Dogs" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Brothers in Arms: Road to Hill 30 (PS2)
-                            <a href="https://en.wikipedia.org/wiki/Brothers_in_Arms:_Road_to_Hill_30" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Tom Clancy's EndWar
-                            <a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_EndWar" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Rayman 2: The Great Escape (PlayStation)
-                            <a href="https://en.wikipedia.org/wiki/Rayman_2:_The_Great_Escape" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Tom Clancy's Splinter Cell: Conviction
-                            <a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Splinter_Cell:_Conviction" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Tom Clancy's Splinter Cell (PS2)
-                            <a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Splinter_Cell_(video_game)" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>James Cameron's Avatar: The Game
-                            <a href="https://en.wikipedia.org/wiki/James_Cameron%27s_Avatar:_The_Game" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>OpenXR</h5>
-                    <ul>
-                        <li>Lead, Agentic AI Task Subgroup, Khronos OpenXR Working Group</li>
-                        <li>Co-presenter, "OpenXR: From XR Portability to Spatial Computing Platform", Khronos session at SIGGRAPH 2026
-                            <a href="https://www.khronos.org/events/siggraph-2026#openxr-from-xr-portability-to-spatial-computing-platform" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_KHR_metal_enable:</i> Enable the usage of Metal graphics API (expand OpenXR to Mac)
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_KHR_metal_enable" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_FB_render_model:</i> Allow applications to request GLTF models for connected devices
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_FB_render_model" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_FB_space_warp:</i> Allow applications to run at half fps but still providing smooth experience
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_FB_space_warp" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_META_local_dimming:</i> Adjust backlight intensity of dark areas on the screen in order to increase content dynamic range
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_META_local_dimming" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_META_performance_metrics:</i> Enumerate and query performance metrics counters of the current XR device and XR application
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_META_performance_metrics" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li><i>XR_EXT_composition_layer_inverted_alpha:</i> Manage the alpha channel interpretion in layer composition
-                            <a href="https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_composition_layer_inverted_alpha" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>talks</h5>
-                    <ul>
-                        <li>"OpenXR: From XR Portability to Spatial Computing Platform", Khronos session at SIGGRAPH 2026 (co-presenter)
-                            <a href="https://www.youtube.com/watch?v=V68nO3Vxok8&t=2100s" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>"Everything You Need to Know to Build on Meta Quest", Meta Connect: introducing the Meta XR Simulator
-                            <a href="https://youtu.be/70iGIz6DslA" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>"Mixed Reality Capture on Quest", Oculus Connect
-                            <a href="https://youtu.be/p1c8D_l0upI" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5>patents</h5>
-                    <ul>
-                        <li>US 11,783,533 B2: Frame extrapolation with application generated motion vector and depth (Application SpaceWarp)
-                            <a href="https://patents.google.com/patent/US11783533B2" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>                    
-                        <li>US 12,272,012 B2: Dynamic Mixed Reality Content in Virtual Reality (Mixed Reality Capture)
-                            <a href="https://patents.google.com/patent/US12272012B2" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>US application 19/442,481: Integrating an artificial intelligence agent with an extended reality environment (pending)</li>                    
-                    </ul>
-                    <h5>indie projects</h5>
-                    <ul>
-                        <li>iPACROSS (Mac, iPad)
-                            <a href="https://www.youtube.com/watch?v=nseMhsB9ex8" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Duckie Go (iOS)
-                            <a href="https://www.youtube.com/watch?v=mW0gJOjM7fA" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>People's Card: Create Your Own Passbook Coupons And Cards
-                            <a href="http://whenitsdone.org/peoplescard/" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Crossword Maker For Cruciverbalists (iOS)
-                            <a href="http://www.cmfcapp.com" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>education</h3>
-                    <ul>
-                        <li>University of Science and Technology of China, School of Computer Science and Technology, Bachelor Degree</li>
-                    </ul>
-                    <h3>certificates</h3>
-                    <ul>
-                        <li>Deep Learning Specialization by DeepLearning.AI on Coursera. Certificate earned on October 2022
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/QL9K63T49Z9R" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Machine Learning by Stanford University on Coursera. Certificate earned on January 31, 2016
-                            <a href="https://www.coursera.org/account/accomplishments/records/G2WR7DN8Q8EP" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                        <li>Finding Hidden Messages in DNA (Bioinformatics I) by University of California, San Diego on Coursera. Certificate earned on April 17, 2016
-                            <a href="https://www.coursera.org/account/accomplishments/records/RJgVPv42JfR2mLjL" class="newtab">
-                                <span class="glyphicon glyphicon-link"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h3>awards</h3>
-                    <ul>
-                        <li>1997 Mathematical Contest in Modeling, Meritorious</li>
-                        <li>1996 ACM-ICPC, 8th in Asia Region</li>
-                        <li>1993 Chinese National Olympiad in Informatics, silver medal</li>
-            <li>1992 Chinese Chemistry Olympiad, silver medal</li>
-                    </ul>
-                </div>
-            </div>
-        </div> <!-- container -->
-    </body>
-    <script>
-    $(document).ready(function(){
-        $('a.newtab').attr('target', '_blank');    // open all link in new tab
-    });
-    </script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-65373439-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xiang Wei — Portfolio</title>
+<meta name="description" content="Xiang Wei builds real-time engines, XR runtimes, simulators, and AI-agent tooling. Senior Staff Software Engineer at Meta; 28 years from the original PlayStation to OpenXR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bay: #0f3d5e;
+    --bay-deep: #082a42;
+    --sky: #dce7f0;
+    --paper: #f7f8f6;
+    --ink: #1b2229;
+    --ink-soft: #4a545e;
+    --muted: #7a838c;
+    --rule: #d3dbe2;
+    --bridge: #c8402e;
+    --display: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif;
+    --text: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    --measure: 66ch;
+    --gutter: clamp(20px, 5vw, 64px);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    font-family: var(--text);
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--bay); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: rgba(15,61,94,.45); }
+  a:hover { text-decoration-color: var(--bay); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--bridge); outline-offset: 3px; border-radius: 2px; }
+
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.05; margin: 0; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(30px, 4vw, 44px); margin-bottom: 28px; }
+  h3 { font-size: clamp(22px, 2.6vw, 28px); }
+  p { margin: 0 0 1em; max-width: var(--measure); }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* Top bar */
+  .top {
+    position: absolute; inset: 0 0 auto 0; z-index: 2;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px var(--gutter);
+    color: #fff;
+  }
+  .top { text-shadow: 0 1px 2px rgba(8,42,66,.6); }
+  .top .brand { font-family: var(--display); font-weight: 600; font-size: 20px; color: #fff; text-decoration: none; }
+  .top nav { display: flex; gap: 22px; }
+  .top nav a { color: #fff; text-decoration: none; font-size: 15px; }
+  .top nav a:hover { text-decoration: underline; text-decoration-color: #fff; }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    min-height: min(92vh, 780px);
+    display: flex; align-items: flex-end;
+    color: #fff;
+    background: var(--bay-deep);
+    overflow: hidden;
+  }
+  .hero img {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; object-position: 62% 40%;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(8,42,66,.62) 0%, rgba(8,42,66,.3) 90px, rgba(8,42,66,0) 200px),
+      linear-gradient(to top, rgba(8,42,66,.92) 0%, rgba(8,42,66,.55) 38%, rgba(8,42,66,0) 70%),
+      linear-gradient(to right, rgba(8,42,66,.35), rgba(8,42,66,0) 60%);
+  }
+  .hero .wrap { position: relative; z-index: 1; padding-top: 140px; padding-bottom: 56px; width: 100%; }
+  .hero h1 { font-size: clamp(56px, 9vw, 128px); letter-spacing: -0.02em; }
+  .hero .lede {
+    font-size: clamp(18px, 2vw, 22px); max-width: 44ch; margin: 18px 0 0;
+    color: rgba(255,255,255,.92); text-wrap: balance;
+  }
+  .hero .credit {
+    position: absolute; right: var(--gutter); bottom: 18px; z-index: 1;
+    font-size: 12px; color: rgba(255,255,255,.7);
+  }
+  .hero .credit a { color: inherit; }
+
+  /* Intro */
+  .intro { padding: 64px 0 24px; }
+  .intro p { font-size: 19px; max-width: 62ch; }
+  .intro .facts { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 8px; color: var(--ink-soft); font-size: 15px; }
+
+  /* Work */
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--rule); }
+
+  .work { display: grid; grid-template-columns: 1fr 1fr; gap: 32px clamp(28px, 5vw, 72px); align-items: center; padding: 28px 0; }
+  .work + .work { border-top: 1px dashed var(--rule); }
+  .work:nth-child(even) figure { order: 2; }
+  .work figure { margin: 0; }
+  .work figure img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 4px; background: var(--sky); }
+  .work figure figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .work h3 { margin-bottom: 10px; }
+  .work .role { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+  .work p { font-size: 16.5px; }
+  .work .links { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 15px; margin-top: 8px; }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 0; }
+  .era { display: grid; grid-template-columns: 150px 1fr; gap: 0 32px; position: relative; padding: 0 0 40px; }
+  .era::before {
+    content: ""; position: absolute; left: 150px; top: 8px; bottom: 0; width: 2px; background: var(--rule);
+  }
+  .era:last-child::before { bottom: auto; height: 100%; }
+  .era .when { font-family: var(--display); font-weight: 600; font-size: 22px; color: var(--bay); line-height: 1.1; padding-top: 2px; position: relative; }
+  .era .when small { display: block; font-family: var(--text); font-weight: 400; font-size: 14px; color: var(--muted); margin-top: 4px; }
+  .era .when::after {
+    content: ""; position: absolute; right: -37px; top: 8px; width: 12px; height: 12px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--bay);
+  }
+  .era.now .when::after { background: var(--bridge); border-color: var(--bridge); }
+  .era .body { padding-left: 32px; }
+  .era h3 { margin-bottom: 6px; }
+  .era .roles { color: var(--ink-soft); font-size: 15px; margin-bottom: 12px; }
+  .era p { font-size: 16.5px; }
+  .era ul.products { display: flex; flex-wrap: wrap; gap: 6px 8px; margin-top: 8px; }
+  .era ul.products li a, .era ul.products li span {
+    display: inline-block; font-size: 14px; padding: 3px 10px; border: 1px solid var(--rule); border-radius: 999px;
+    color: var(--ink-soft); text-decoration: none; background: #fff;
+  }
+  .era ul.products li a:hover { border-color: var(--bay); color: var(--bay); }
+
+  /* Reference lists */
+  .cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .cols h3 { font-size: 20px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--bay); display: inline-block; }
+  .list li { padding: 7px 0; border-bottom: 1px solid var(--rule); font-size: 15.5px; line-height: 1.45; }
+  .list li:last-child { border-bottom: 0; }
+  .list li i { color: var(--ink-soft); }
+  .list li .note { display: block; color: var(--muted); font-size: 14px; }
+  .list.plain li { border: 0; padding: 4px 0; }
+
+  /* Footer */
+  footer { background: var(--bay-deep); color: rgba(255,255,255,.85); padding: 56px 0 40px; margin-top: 24px; }
+  footer h2 { color: #fff; margin-bottom: 14px; }
+  footer p { color: rgba(255,255,255,.85); }
+  footer a { color: #fff; text-decoration-color: rgba(255,255,255,.5); }
+  footer .links { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 17px; margin-top: 8px; }
+  footer .fine { margin-top: 40px; font-size: 13px; color: rgba(255,255,255,.55); max-width: none; }
+
+  @media (max-width: 860px) {
+    .work { grid-template-columns: 1fr; }
+    .work:nth-child(even) figure { order: 0; }
+    .cols { grid-template-columns: 1fr; gap: 28px; }
+    .era { grid-template-columns: 1fr; padding-left: 22px; }
+    .era::before { left: 0; }
+    .era .when::after { right: auto; left: -29px; }
+    .era .body { padding-left: 0; margin-top: 8px; }
+    .top nav { gap: 14px; }
+    .hero { flex-direction: column; justify-content: flex-end; }
+    .hero .wrap { padding-bottom: 28px; }
+    .hero .credit { position: static; padding: 0 var(--gutter) 14px; align-self: flex-start; }
+  }
+  @media (max-width: 520px) {
+    .top .brand { font-size: 18px; }
+    .top nav a { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="top">
+    <a class="brand" href="./index.html">xwei.me</a>
+    <nav aria-label="Page">
+      <a href="#work">Work</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#reference">Patents &amp; talks</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <img src="pic/hero-bay.jpg" srcset="pic/hero-bay-960.jpg 960w, pic/hero-bay.jpg 1920w" sizes="100vw" alt="Stylized real-time render of San Francisco from above, looking north across the bay to the Golden Gate and Bay bridges" fetchpriority="high">
+  <div class="wrap">
+    <h1>Xiang Wei</h1>
+    <p class="lede">I build real-time engines, XR runtimes, simulators, and the tooling that lets AI agents drive them.</p>
+  </div>
+  <div class="credit">Rendered by my <a href="https://x.com/xgwei/status/2087715999500116330">SF Bay Area digital twin</a>, C++ and Vulkan.</div>
+</header>
+
+<main>
+  <div class="intro wrap">
+    <p>Senior Staff Software Engineer at Meta. I own the developer interface of Meta's XR platform: the native runtime-to-engine plugins, the OpenXR integration, the Meta XR Simulator, and the AI-agent tooling shipped in the Meta XR SDK. Before Meta, nearly two decades at Ubisoft on more than ten AAA titles, going back to the original PlayStation.</p>
+    <div class="facts">
+      <span>28 years shipping engines and runtimes</span>
+      <span>Spatial AI agents and XR environment simulation</span>
+      <span>Lead, Agentic AI Task Subgroup, Khronos OpenXR</span>
+    </div>
+  </div>
+
+  <section id="work" class="wrap">
+    <h2>Selected work</h2>
+
+    <article class="work">
+      <figure>
+        <img src="pic/meta-xr-operator.jpg" alt="Diagram of the Meta XR Operator build, test, verify loop and the agent, MCP proxy, runtime stack">
+        <figcaption>Diagrams from the Meta developer blog.</figcaption>
+      </figure>
+      <div>
+        <h3>Meta XR Operator</h3>
+        <div class="role">Creator and lead, 2025 to present</div>
+        <p>The XR industry's first AI-agent interface, built on OpenXR. A cross-platform C++ API layer exposes spatial state as Model Context Protocol tools, with an MCP server and proxy, engine integration, and an agentic build-test-verify loop on top.</p>
+        <p>An agent can play a real, unmodified open-source VR action game the way a person does: it explores the live app, writes a skill, then compiles a player script that runs the observe-act loop at 23 Hz with 1 to 16 ms per call.</p>
+        <div class="links">
+          <a href="https://x.com/xgwei/status/2090453805926408426">Watch the agent play</a>
+          <a href="https://developers.meta.com/horizon/blog/meta-xr-operator-close-the-build-test-verify-loop-for-vr/">Meta developer blog</a>
+          <a href="https://github.com/xwovr/NeonReachVR/tree/master/.claude/skills/neonreach-gameplay-testing">Agent-written skill on GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="work">
+      <figure>
+        <img src="pic/meta-xr-simulator.jpg" alt="Meta XR Simulator title image showing developers testing mixed reality apps on PC and Mac">
+        <figcaption>Title image from the Meta developer blog.</figcaption>
+      </figure>
+      <div>
+        <h3>Meta XR Simulator</h3>
+        <div class="role">Architect and creator, 2022 to 2024</div>
+        <p>A desktop OpenXR runtime, built from scratch, that simulates physical headsets and controllers, plus a synthetic environment server that simulates physical rooms, so developers build and test mixed reality apps without hardware.</p>
+        <p>It brought OpenXR to macOS as the first runtime on the platform. I convinced the OpenXR Working Group to extend the spec for macOS and built the Metal to Vulkan interop that made it possible.</p>
+        <div class="links">
+          <a href="https://developers.meta.com/horizon/blog/meta-xr-simulator-pc-mac-unity-unreal-developer-mixed-reality/">Meta developer blog</a>
+          <a href="https://youtu.be/70iGIz6DslA">Meta Connect session</a>
+          <a href="https://developer.oculus.com/downloads/package/meta-xr-simulator/">Download</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="work">
+      <figure>
+        <img src="pic/bay-area-digital-twin.jpg" alt="Aerial render of downtown San Francisco and the Bay Bridge from the digital twin">
+        <figcaption>Personal project, unrelated to my work at Meta.</figcaption>
+      </figure>
+      <div>
+        <h3>SF Bay Area digital twin</h3>
+        <div class="role">Personal project, 2026</div>
+        <p>A stylized real-time twin of an 80 km square built from open data in C++ and Vulkan: 1 m lidar terrain, 424,787 extruded buildings, 41 parametric landmarks, and a globe-to-surface camera. A simulation core replays 24 hours of eight real-world feeds, from highway flow to flights and weather, at 1x to 2000x.</p>
+        <p>AI agents wrote and validated all of the roughly 235,000 lines. I built the orchestration: golden-image checks, an MCP server that drives the live app, and a reviewer agent that acts as an independent critic.</p>
+        <div class="links">
+          <a href="https://x.com/xgwei/status/2087715999500116330">Clips and write-up</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="timeline" class="wrap">
+    <h2>Timeline</h2>
+    <div class="timeline">
+
+      <div class="era now">
+        <div class="when">2017 to now<small>Meta / Oculus VR, Burlingame</small></div>
+        <div class="body">
+          <h3>XR runtimes, simulators, and agents</h3>
+          <div class="roles">Senior Staff Software Engineer since 2023. Tech Lead Manager, XR Developer Architecture, 2018 to 2023.</div>
+          <p>Core maintainer of the native plugin bridging the Meta VR runtime to Unity and Unreal, the layer every app on the platform depends on. Led the migration of the Meta XR SDKs from the proprietary API to OpenXR. Invented Mixed Reality Capture on Quest and co-invented Application SpaceWarp. Built a GenAI text-to-3D asset service for Horizon Worlds.</p>
+          <ul class="products">
+            <li><a href="https://en.wikipedia.org/wiki/Meta_Quest_3">Meta Quest 3</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Meta_Quest_Pro">Quest Pro</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Quest_2">Quest 2</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Oculus_Quest">Oculus Quest</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Oculus_Rift_S">Rift S</a></li>
+            <li><a href="https://developer.oculus.com/downloads/package/unity-integration/">Meta XR SDK for Unity</a></li>
+            <li><a href="https://developer.oculus.com/downloads/package/unreal-engine-5-integration-github/">Meta XR SDK for Unreal</a></li>
+            <li><a href="https://www.meta.com/help/quest/articles/in-vr-experiences/social-features-and-sharing/quest-2-mixed-reality-capture/">Mixed Reality Capture</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="era">
+        <div class="when">2014 to 2017<small>Ubisoft San Francisco</small></div>
+        <div class="body">
+          <h3>Senior Programmer</h3>
+          <p><i>South Park: The Fractured but Whole</i>. A depth-redistribution pipeline that lets characters made of thousands of layers interact without depth fighting; 1080p/60 on Xbox One and PS4 and 4K/60 on PS4 Pro; build, test, and profiling automation; a mixed reality prototype on HoloLens.</p>
+        </div>
+      </div>
+
+      <div class="era">
+        <div class="when">2008 to 2014<small>Ubisoft Montréal</small></div>
+        <div class="body">
+          <h3>Technical Architect, Technology Group</h3>
+          <div class="roles">Rendering and optimization engineer, 2008 to 2010.</div>
+          <p>Engine architect across the titles below. Ported <i>Far Cry 4</i> to PS4 and moved <i>Far Cry 3</i> and <i>Watch Dogs</i> to Direct3D 11. Designed <i>Black Flag</i>'s large-world architecture with dynamic origin shifting. GPU weather simulation of up to a million lit particles, 10x faster volumetric clouds, fur, water, grass, softbody, SDSM, PCSS, HBAO, deferred MSAA/EQAA, and double the PS3 rendering throughput by moving work to SPUs.</p>
+          <ul class="products">
+            <li><a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_Syndicate">Assassin's Creed Syndicate</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed_IV:_Black_Flag">Assassin's Creed IV: Black Flag</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Far_Cry_4">Far Cry 4</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Far_Cry_3">Far Cry 3</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Watch_Dogs">Watch Dogs</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege">Rainbow Six Siege</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Splinter_Cell:_Conviction">Splinter Cell: Conviction</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/James_Cameron%27s_Avatar:_The_Game">Avatar: The Game</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="era">
+        <div class="when">1998 to 2008<small>Ubisoft Shanghai</small></div>
+        <div class="body">
+          <h3>Lead Engineer</h3>
+          <div class="roles">Lead Core System Engineer, then Lead Rendering Engineer, then Lead Engineer.</div>
+          <p>Lead engineer and architect of <i>Tom Clancy's EndWar</i> on Xbox 360: a step-based deterministic engine and peer-to-peer synchronization for an online RTS, growing the engine team from 5 to more than 30. Earlier, PS2 rendering for the Tom Clancy and Brothers in Arms series, and core engine modules for <i>Rayman 2</i> on the original PlayStation.</p>
+          <ul class="products">
+            <li><a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_EndWar">Tom Clancy's EndWar</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Brothers_in_Arms:_Road_to_Hill_30">Brothers in Arms: Road to Hill 30</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Tom_Clancy%27s_Splinter_Cell_(video_game)">Splinter Cell</a></li>
+            <li><span>Ghost Recon</span></li>
+            <li><span>Rainbow Six 3</span></li>
+            <li><a href="https://en.wikipedia.org/wiki/Rayman_2:_The_Great_Escape">Rayman 2: The Great Escape</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reference" class="wrap">
+    <div class="cols">
+      <div>
+        <h3>OpenXR</h3>
+        <ul class="list">
+          <li>Lead, Agentic AI Task Subgroup, Khronos OpenXR Working Group</li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_KHR_metal_enable"><i>XR_KHR_metal_enable</i></a><span class="note">Metal graphics API, bringing OpenXR to Mac</span></li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_FB_render_model"><i>XR_FB_render_model</i></a><span class="note">glTF models for connected devices</span></li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_FB_space_warp"><i>XR_FB_space_warp</i></a><span class="note">Run at half frame rate and stay smooth</span></li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_META_local_dimming"><i>XR_META_local_dimming</i></a><span class="note">Backlight control for dynamic range</span></li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#XR_META_performance_metrics"><i>XR_META_performance_metrics</i></a><span class="note">Query device and app performance counters</span></li>
+          <li><a href="https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_composition_layer_inverted_alpha"><i>XR_EXT_composition_layer_inverted_alpha</i></a><span class="note">Alpha interpretation in layer composition</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Patents</h3>
+        <ul class="list">
+          <li><a href="https://patents.google.com/patent/US12272012B2">US 12,272,012 B2</a><span class="note">Dynamic mixed reality content in virtual reality (Mixed Reality Capture)</span></li>
+          <li><a href="https://patents.google.com/patent/US11783533B2">US 11,783,533 B2</a><span class="note">Frame extrapolation with application-generated motion vector and depth (Application SpaceWarp)</span></li>
+          <li>US application 19/442,481, pending<span class="note">Integrating an artificial intelligence agent with an extended reality environment</span></li>
+        </ul>
+        <h3 style="margin-top:32px">Talks</h3>
+        <ul class="list">
+          <li><a href="https://www.youtube.com/watch?v=V68nO3Vxok8&t=2100s">OpenXR: From XR Portability to Spatial Computing Platform</a><span class="note">Khronos session, SIGGRAPH 2026, co-presenter</span></li>
+          <li><a href="https://youtu.be/70iGIz6DslA">Everything You Need to Know to Build on Meta Quest</a><span class="note">Meta Connect, introducing the Meta XR Simulator</span></li>
+          <li><a href="https://youtu.be/p1c8D_l0upI">Mixed Reality Capture on Quest</a><span class="note">Oculus Connect</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Skills</h3>
+        <ul class="list plain">
+          <li>C++, Python, C#, GLSL and HLSL</li>
+          <li>Vulkan, Metal, Direct3D, OpenGL and ES</li>
+          <li>OpenXR runtimes, compositors, engine plugins for Unity, Unreal, and Godot</li>
+          <li>Simulation, digital twins, real-time rendering, GPU optimization</li>
+          <li>AI agents, MCP servers and tools, LLM tool calling, agent-driven validation</li>
+          <li>Windows, macOS, Android, iOS, PlayStation, Xbox</li>
+        </ul>
+        <h3 style="margin-top:32px">Education and awards</h3>
+        <ul class="list plain">
+          <li>Bachelor's degree, Computer Engineering, University of Science and Technology of China</li>
+          <li>ACM-ICPC 1996, 8th in Asia Region</li>
+          <li>Mathematical Contest in Modeling 1997, Meritorious</li>
+          <li>Chinese National Olympiad in Informatics 1993, silver medal</li>
+          <li>Chinese Chemistry Olympiad 1992, silver medal</li>
+        </ul>
+        <h3 style="margin-top:32px">Indie projects</h3>
+        <ul class="list plain">
+          <li><a href="https://www.youtube.com/watch?v=nseMhsB9ex8">iPACROSS</a>, Mac and iPad</li>
+          <li><a href="https://www.youtube.com/watch?v=mW0gJOjM7fA">Duckie Go</a>, iOS</li>
+          <li><a href="http://whenitsdone.org/peoplescard/">People's Card</a>, Passbook coupons and cards</li>
+          <li><a href="http://www.cmfcapp.com">Crossword Maker for Cruciverbalists</a>, iOS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>Palo Alto, California.</p>
+    <div class="links">
+      <a href="https://x.com/xgwei">x.com/xgwei</a>
+      <a href="https://www.linkedin.com/in/xiang-wei-50172aa/">LinkedIn</a>
+    </div>
+    <p class="fine">Hero image rendered by my SF Bay Area digital twin. Map data © OpenStreetMap contributors (ODbL); land cover ESA WorldCover 2021 (CC BY 4.0); terrain USGS 3DEP and NOAA. Product images © Meta and their respective publishers.</p>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+</script>
+</body>
 </html>

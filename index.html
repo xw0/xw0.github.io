@@ -1,67 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Xiang Wei</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bootstrap.min.js"></script>
-        <style>
-        html {
-            background: url(pic/background.jpg) no-repeat center center fixed;
-            background-color:#FFF;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            z-index:-1;
-        }
-        body {
-            background-color: transparent;
-            color: white;
-        }
-        a {
-            color: #47C1DC;
-        }
-        #portfolio, #contact {
-            background-color:transparent;
-        }
-        .centered {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        </style>
-    </head>
-    <body>
-        <div class="centered">
-            <div class="text-center">
-               <h4>xwei.me</h4>
-               <a href="./portfolio.html">
-                   portfolio
-               </a>
-               &middot;
-               <a href="http://whenitsdone.org/" target="_blank">
-                   blog
-               </a>
-               &middot;
-               <a href="mailto:weixiang77@gmail.com">
-                   contact
-               </a>
-            </div>
-        </div>
-    </body>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-65373439-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xiang Wei</title>
+<meta name="description" content="Xiang Wei builds real-time engines, XR runtimes, simulators, and AI-agent tooling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600&family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root { --bay-deep: #082a42; --bridge: #c8402e; --gutter: clamp(20px, 5vw, 64px); }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    position: relative; display: flex; align-items: flex-end;
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; color: #fff;
+    background: var(--bay-deep); overflow: hidden;
+  }
+  img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 40%; }
+  .shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,42,66,.92) 0%, rgba(8,42,66,.5) 40%, rgba(8,42,66,0) 70%); }
+  .wrap { position: relative; padding: 0 var(--gutter) 56px; max-width: 1120px; margin: 0 auto; width: 100%; }
+  h1 { font-family: "IBM Plex Sans Condensed", "Arial Narrow", sans-serif; font-weight: 600; font-size: clamp(56px, 9vw, 128px); line-height: 1.05; letter-spacing: -0.02em; margin: 0; }
+  p { font-size: clamp(18px, 2vw, 22px); max-width: 44ch; margin: 18px 0 28px; color: rgba(255,255,255,.92); }
+  nav { display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 18px; }
+  nav a { color: #fff; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(255,255,255,.5); }
+  nav a:hover { text-decoration-color: #fff; }
+  nav a:focus-visible { outline: 3px solid var(--bridge); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <img src="pic/hero-bay.jpg" srcset="pic/hero-bay-960.jpg 960w, pic/hero-bay.jpg 1920w" sizes="100vw" alt="Stylized real-time render of San Francisco from above" fetchpriority="high">
+  <div class="shade"></div>
+  <div class="wrap">
+    <h1>Xiang Wei</h1>
+    <p>I build real-time engines, XR runtimes, simulators, and the tooling that lets AI agents drive them.</p>
+    <nav>
+      <a href="./portfolio.html">Portfolio</a>
+      <a href="https://x.com/xgwei">x.com/xgwei</a>
+      <a href="https://www.linkedin.com/in/xiang-wei-50172aa/">LinkedIn</a>
+    </nav>
+  </div>
+</body>
 </html>
