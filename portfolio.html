@@ -173,7 +173,9 @@
   }
   @media (max-width: 520px) {
     .top .brand { font-size: 18px; }
-    .top nav a { font-size: 14px; }
+    .top { align-items: flex-start; }
+    .top nav { flex-wrap: wrap; justify-content: flex-end; gap: 6px 14px; }
+    .top nav a { font-size: 14px; white-space: nowrap; }
   }
 </style>
 </head>
@@ -187,6 +189,7 @@
       <a href="#timeline">Timeline</a>
       <a href="#reference">Patents &amp; talks</a>
       <a href="#elsewhere">Elsewhere</a>
+      <a href="https://xw0.github.io/rust-for-cpp/">Rust for C++</a>
     </nav>
   </div>
   <img src="pic/hero-bay.jpg" srcset="pic/hero-bay-960.jpg 960w, pic/hero-bay.jpg 1920w" sizes="100vw" alt="Stylized real-time render of San Francisco from above, looking north across the bay to the Golden Gate and Bay bridges" fetchpriority="high">
